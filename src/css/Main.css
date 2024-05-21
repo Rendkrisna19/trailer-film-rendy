@@ -1,0 +1,64 @@
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url('../img/home.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #f40612;
+  }
+  
+  @media (max-width: 768px) {
+    .hero-wrapper {
+      padding: 1rem;
+      height: 60vh;
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-wrapper {
+      padding: 0.5rem;
+      height: 50vh;
+    }
+  
+    .hero-title {
+      font-size: 1.5rem;
+    }
+  
+    .hero-button {
+      font-size: 0.8rem;
+    }
+  }
+
+
+
+  

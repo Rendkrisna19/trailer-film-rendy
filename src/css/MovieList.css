@@ -1,0 +1,95 @@
+.list-wrapper {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem;
+  }
+  
+  .movie-card {
+    background: #000000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    aspect-ratio: 19 / 6;
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .movie-card p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .movie-card {
+    position: relative; /* Diperlukan untuk posisi relatif pada gambar */
+  }
+  
+  .movie-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease; /* Efek transisi untuk transformasi */
+  }
+  
+  .movie-card:hover .movie-image {
+    transform: scale(1.1); /* Memperbesar gambar saat di hover */
+  }
+  
+  .movie-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.5); /* Efek bayangan dengan opacity */
+    opacity: 0; /* Mulai dengan opacity 0 */
+    transition: opacity 0.3s ease; /* Efek transisi untuk opacity */
+  }
+  
+  .movie-card:hover::before {
+    opacity: 1; /* Tampilkan efek bayangan saat di hover */
+  }
+  
+  .movie-card:hover h3,
+  .movie-card:hover p {
+    color: #fff; /* Ubah warna teks saat di hover */
+  }
+  
+  .movie-card h3,
+  .movie-card p {
+    position: relative; /* Diperlukan untuk z-index */
+    z-index: 1; /* Jaga teks di atas gambar */
+  }
+
+  
+@media (max-width: 768px) {
+    .list-wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .list-wrapper {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+  
+
+  

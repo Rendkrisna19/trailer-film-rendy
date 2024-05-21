@@ -1,0 +1,33 @@
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: #fff;
+    background-color: #222;
+  }
+  
+  .movie-detail-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .movie-detail p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .movie-detail-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+  
